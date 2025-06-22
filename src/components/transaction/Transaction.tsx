@@ -38,7 +38,7 @@ const Transaction = ({ transactionType, title }: ITransaction) => {
     const amount = parseInt(inputAmount);
     updateBalance(transactionType === 'deposit' ? amount : -amount);
 
-    await new Promise((resolve) => setTimeout(resolve, 4000));
+    await new Promise((resolve) => setTimeout(resolve, 2000));
     toggleMode('default');
   };
 

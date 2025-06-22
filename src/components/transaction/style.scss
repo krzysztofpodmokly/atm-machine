@@ -15,7 +15,7 @@
     inset 3px -3px 6px rgba(110, 110, 110, 0.5);
   background-color: $light;
 
-  @include respond(md) {
+  @include respond('md') {
     grid-template-columns: 1fr 2fr 1fr;
   }
 
@@ -30,7 +30,7 @@
     border-radius: $radius;
     padding: $padding-md;
 
-    @include respond(md) {
+    @include respond('md') {
       font-size: $sizeM;
     }
   }
@@ -38,7 +38,7 @@
   .amount {
     grid-column: span 1;
 
-    @include respond(md) {
+    @include respond('md') {
       grid-column: span 2;
     }
 
@@ -55,7 +55,7 @@
     justify-content: center;
     padding: $padding-sm;
 
-    @include respond(md) {
+    @include respond('md') {
       grid-template-columns: repeat(3, 60px);
       grid-auto-rows: 60px;
       gap: 10px;
@@ -90,7 +90,7 @@
     > * {
       font-size: $sizeS;
 
-      @include respond(md) {
+      @include respond('md') {
         font-size: $sizeM;
       }
     }
@@ -117,7 +117,7 @@
         background: $white;
       }
 
-      @include respond(md) {
+      @include respond('md') {
         width: 7rem;
         height: 7rem;
         font-size: $sizeXL;

@@ -14,7 +14,7 @@
   border-radius: $radius;
   border: 1px solid $main;
 
-  @include respond(md) {
+  @include respond('md') {
     font-size: $sizeM;
     padding: $padding-md;
   }
