@@ -21,26 +21,26 @@ This project is a simulated ATM machine interface built with **React**, **TypeSc
 
 ### Installation
 
-git clone https://github.com/krzysztofpodmokly/atm-machine.git
+`git clone https://github.com/krzysztofpodmokly/atm-machine.git`
 
-cd atm-machine
+`cd atm-machine`
 
-npm install
+`npm install`
 
 #### or
 
-yarn install
+`yarn install`
 
 ### Run locally
 
-npm run dev
+`npm run dev`
 
 #### or
 
-yarn dev
+`yarn dev`
 
 Open your browser at: [http://localhost:5173/](http://localhost:5173/)
 
 ### Run tests
 
-npx vitest
+`npx vitest`
