@@ -1,17 +1,23 @@
 @use '@/styles/variables' as *;
+@use '@/styles/responsive' as *;
 
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-
-  padding: $padding;
-  font-size: $sizeM;
+  width: 100%;
+  padding: $padding-sm;
+  font-size: $sizeS;
   border: none;
   background-color: $bg;
-  border-radius: 8px;
+  border-radius: $radius;
   border: 1px solid $main;
+
+  @include respond(md) {
+    font-size: $sizeM;
+    padding: $padding-md;
+  }
 
   &:disabled {
     background: $disabled;
@@ -19,7 +25,7 @@
     opacity: 0.6;
   }
 
-  &:hover {
+  &:not(:disabled):hover {
     cursor: pointer;
     background-color: $white;
   }
