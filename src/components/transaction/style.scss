@@ -1,0 +1,93 @@
+@use '@/styles/variables' as *;
+
+.atm-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: $radius;
+  padding: $padding;
+  box-shadow: inset 3px 3px 6px rgba(110, 110, 110, 0.5),
+    inset -3px -3px 6px rgba(110, 110, 110, 0.5),
+    inset -3px 3px 6px rgba(110, 110, 110, 0.5),
+    inset 3px -3px 6px rgba(110, 110, 110, 0.5);
+  background-color: $light;
+
+  .amount,
+  .balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $white;
+    border-radius: $radius;
+    padding: $padding;
+  }
+
+  .amount {
+    grid-column: span 2;
+
+    .error {
+      color: $error;
+    }
+  }
+
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-auto-rows: 60px;
+    gap: 10px;
+    justify-content: center;
+    padding: $padding;
+
+    > * {
+      background-color: $accent;
+      border: 1px solid $dark;
+      border-radius: 8px;
+      font-size: $sizeM;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $accent-hover;
+      }
+    }
+
+    > *:nth-child(10) {
+      grid-column: 2;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .back-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .back-btn {
+      border: 1px solid $main;
+      border-radius: 50%;
+      width: 7rem;
+      height: 7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $bg;
+      font-size: $sizeXL;
+
+      &:hover {
+        cursor: pointer;
+        background: $white;
+      }
+    }
+  }
+}

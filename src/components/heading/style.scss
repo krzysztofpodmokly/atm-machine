@@ -1,0 +1,18 @@
+@use '@/styles/variables' as *;
+
+.heading {
+  font-size: $sizeXL;
+  text-align: center;
+}
+
+.heading.xl {
+  font-size: $sizeXL;
+}
+
+.heading.m {
+  font-size: $sizeM;
+}
+
+.heading.s {
+  font-size: $sizeS;
+}
