@@ -6,7 +6,7 @@
 
 This project is a simulated ATM machine interface built with **React**, **TypeScript**, and **Vite**.
 
-![Screenshot](./public/images/screenshot.png)
+![Screenshot](./public/images/atm-2.png)
 
 ## Features
 
@@ -21,7 +21,7 @@ This project is a simulated ATM machine interface built with **React**, **TypeSc
 
 ### Installation
 
-git clone https://github.com/yourusername/atm-machine.git
+git clone https://github.com/krzysztofpodmokly/atm-machine.git
 cd atm-machine
 npm install
 
