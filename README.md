@@ -22,10 +22,12 @@ This project is a simulated ATM machine interface built with **React**, **TypeSc
 ### Installation
 
 git clone https://github.com/krzysztofpodmokly/atm-machine.git
+
 cd atm-machine
+
 npm install
 
-# or
+#### or
 
 yarn install
 
@@ -33,9 +35,10 @@ yarn install
 
 npm run dev
 
-# or
+#### or
 
 yarn dev
+
 Open your browser at: [http://localhost:5173/](http://localhost:5173/)
 
 ### Run tests
