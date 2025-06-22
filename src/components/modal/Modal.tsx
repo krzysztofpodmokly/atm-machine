@@ -1,4 +1,4 @@
-import { useModeContext } from '../../contexts';
+import { useBalanceContext, useModeContext } from '../../contexts';
 import Button from '../button/Button';
 import Heading from '../heading/Heading';
 import type { IModalProps } from './interfaces';
@@ -6,6 +6,7 @@ import './style.scss';
 
 const Modal = ({ closeModal }: IModalProps) => {
   const { resetMode } = useModeContext();
+  const { clearInput } = useBalanceContext();
 
   return (
     <div className="modal-container" role="dialog">
@@ -17,7 +18,10 @@ const Modal = ({ closeModal }: IModalProps) => {
         <div className="modal-buttons">
           <Button
             className="modal-close-button"
-            onClick={resetMode}
+            onClick={() => {
+              clearInput();
+              resetMode();
+            }}
             text={'YES'}
           />
           <Button
